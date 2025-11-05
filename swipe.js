@@ -32,3 +32,42 @@ var swiper = new Swiper(".mySwiper", {
       disableOnInteraction: false,
     },
   });
+
+
+  /*------------------------------------------------------------ */ 
+  
+  
+  // === JS for switching between News, Sports, Health, and Travel ===
+
+// Select all section divs (inside container1 and container2)
+const sections = document.querySelectorAll(
+  '.head-news, .head-sport, .head-health, .head-travel'
+);
+
+// Select all category links in container2 headers
+const links = document.querySelectorAll('.header a');
+
+// Function to show the selected section
+function showSection(category) {
+  sections.forEach((section) => {
+    if (section.id === `head-${category.toLowerCase()}`) {
+      section.style.display = 'block';
+    } else {
+      section.style.display = 'none';
+    }
+  });
+}
+
+// Add click event to each link
+links.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const category = link.textContent.trim(); // Get text like "News", "Health", etc.
+    showSection(category);
+  });
+});
+
+// Default: show Sports section first
+showSection('sport');
+
+
