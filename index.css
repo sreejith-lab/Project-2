@@ -19,7 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 1000;
 }
@@ -99,10 +99,6 @@ body {
 }
 
 /* ------------------------------------------------------------------- */
-
-main {
-    margin-top: 8px;
-}
 
 main {
     height: 100%;

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magazine Dashboard</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard1.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <!-- <div class="sidebar" id="sidebar">
+    <h2>Infosys Magazine</h2>
+    <a href="#" class="active">Dashboard</a>
+    <a href="#">News</a>
+    <a href="#">Health</a>
+    <a href="#">Sports</a>
+    <a href="#">Travel</a>
+  </div> -->
+
+  <!-- Main Content -->
+  <div class="main-content" id="mainContent">
+    <div class="topbar">
+      <span class="menu-btn" id="menuBtn">&#9776;</span>
+      <h1>Dashboard Overview</h1>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search articles..." />
+      </div>
+    </div>
+
+    <div class="dashboard" id="dashboard">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x200/?news" alt="News">
+        <div class="card-content">
+          <h3>Global Updates</h3>
+          <p>Stay updated with the latest headlines and breaking news around the world.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x200/?sports" alt="Sports">
+        <div class="card-content">
+          <h3>Sports Highlights</h3>
+          <p>Catch up with cricket, football, and other sports events from India and abroad.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x200/?travel" alt="Travel">
+        <div class="card-content">
+          <h3>Travel Diaries</h3>
+          <p>Explore stunning destinations, travel tips, and cultural experiences worldwide.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x200/?health" alt="Health">
+        <div class="card-content">
+          <h3>Health & Wellness</h3>
+          <p>Get the best tips on fitness, nutrition, and holistic wellbeing for your lifestyle.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Stackly Magazine | Connecting You to News, Sports, Travel & Health</p>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Sidebar toggle
+    const menuBtn = document.getElementById("menuBtn");
+    const sidebar = document.getElementById("sidebar");
+    const mainContent = document.getElementById("mainContent");
+
+    menuBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("show");
+    });
+
+    // Search filter
+    const searchInput = document.getElementById("searchInput");
+    const cards = document.querySelectorAll(".card");
+
+    searchInput.addEventListener("keyup", () => {
+      const filter = searchInput.value.toLowerCase();
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(filter) ? "block" : "none";
+      });
+    });
+
+    // Fade-in animation on load
+    window.addEventListener("load", () => {
+      const cards = document.querySelectorAll(".card");
+      cards.forEach((card, index) => {
+        setTimeout(() => card.classList.add("visible"), index * 200);
+      });
+    });
+  </script>
+</body>
+</html>
