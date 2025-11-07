@@ -101,7 +101,103 @@ body {
 
 /* ------------------------------*/
 
+.hero-img {
+    position: relative;
+}
 
+.hero-img img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(30%);
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content h2 {
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    top: 40%;
+}
+
+.hero-content p {
+    position: absolute;
+    font-size: 28px;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    top: 50%;
+    padding: 10px 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.head-content h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-weight:bolder;
+}
+
+
+section {
+    overflow-x: hidden;
+    padding: 20px 5%;
+    /* box-shadow: 2px 18px 12px rgba(15, 10, 20, 0.15);
+    transition: transform 0.3s ease;
+    border-radius: 12px; */
+}
+
+.Table {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.container {
+    background: white;
+    flex: 400px;
+    flex-wrap: wrap;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 5px 15px 12px rgba(107, 33, 168, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 400px;
+}
+
+.container h3 {
+    font-size: x-large;
+    padding: 10px;
+    text-align: center;
+    color: red;
+}
+
+.container p {
+    font-size: x-large;
+    padding: 15px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/* ------------------------------------------------- */
 .footer-parent {
     display: flex;
     flex-wrap: wrap;
@@ -219,5 +315,70 @@ body {
 @media screen and (max-width:350px) {
     .set1 .logo {
         width: 200px;
+    }
+}
+@media screen and (max-width:1481px) {
+    .hero-content p {
+        text-align: center;
+        padding: 30px;
+    }
+}
+@media screen and (max-width:1241px) {
+    .menu_bar ul {
+        display: none;
+    }
+    .hero-content h2 {
+        font-size: 40px;
+    }
+    .hero-content p {
+        font-size: 26px;
+        padding: 15px;
+    }
+}
+@media screen and (max-width:700px) {
+    .Table {
+        padding: 20px;
+    }
+    section {
+        padding: 20px;
+        overflow-x: hidden;
+    }
+    .head-content h1 {
+        padding: 10px;
+        font-size: x-large;
+    }
+    .container h3 {
+        padding: 10px;
+        font-size: larger;
+    }
+    .container p {
+        padding: 10px;
+        font-size: larger;
+    }
+}
+@media screen and (max-width:480px) {
+    .hero-content h2 {
+        font-size: 32px;
+    }
+    .Table {
+        padding: 10px;
+    }
+    section {
+        padding: 10px;
+    }
+    .hero-content p {
+        font-size: 22px;
+    }
+    .head-content h1 {
+        padding: 10px;
+        font-size: larger;
+    }
+    .container > h3 {
+        padding: 10px;
+        font-size: medium;
+    }
+    .container > p {
+        padding: 10px;
+        font-size: medium;
     }
 }

@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Magazine Dashboard</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="dashboard1.css">
+  <link rel="stylesheet" href="dashboard1.css">
 </head>
+
 <body>
 
   <!-- Sidebar -->
   <!-- <div class="sidebar" id="sidebar">
     <h2>Infosys Magazine</h2>
-    <a href="#" class="active">Dashboard</a>
+    <a href="" class="active">Dashboard</a>
     <a href="#">News</a>
     <a href="#">Health</a>
     <a href="#">Sports</a>
@@ -32,7 +34,6 @@
 
     <div class="dashboard" id="dashboard">
       <div class="card">
-        <img src="https://source.unsplash.com/400x200/?news" alt="News">
         <div class="card-content">
           <h3>Global Updates</h3>
           <p>Stay updated with the latest headlines and breaking news around the world.</p>
@@ -40,7 +41,6 @@
       </div>
 
       <div class="card">
-        <img src="https://source.unsplash.com/400x200/?sports" alt="Sports">
         <div class="card-content">
           <h3>Sports Highlights</h3>
           <p>Catch up with cricket, football, and other sports events from India and abroad.</p>
@@ -48,7 +48,6 @@
       </div>
 
       <div class="card">
-        <img src="https://source.unsplash.com/400x200/?travel" alt="Travel">
         <div class="card-content">
           <h3>Travel Diaries</h3>
           <p>Explore stunning destinations, travel tips, and cultural experiences worldwide.</p>
@@ -56,16 +55,127 @@
       </div>
 
       <div class="card">
-        <img src="https://source.unsplash.com/400x200/?health" alt="Health">
         <div class="card-content">
           <h3>Health & Wellness</h3>
           <p>Get the best tips on fitness, nutrition, and holistic wellbeing for your lifestyle.</p>
         </div>
       </div>
     </div>
+    <div class="table1">
+        <div class="boxes">
+          <h3>Total Batteries Produced</h3>
+          <p>125,000 units</p>
+        </div>
+        <div class="boxes">
+          <h3>Active Installations</h3>
+          <p>86000</p>
+        </div>
+        <div class="boxes">
+          <h3>Battery Efficiency Average</h3>
+          <p>94.8%</p>
+        </div>
+        <div class="boxes">
+          <h3>Defective Rate</h3>
+          <p>1.2%</p>
+        </div>
+    </div>
+    <div class="all">      
+      <div class="table2">
+        <div class="container1">
+          <canvas id="myChart1"></canvas>
+        </div>
+        <div class="container2">
+          <canvas style="min-height: 925px;" id="myChart2"></canvas>
+        </div>
+      </div>
+      <div class="table3">
+        <div class="Box">
+          <div class="head">
+            <h2>Charging Stations</h2>
+            <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+          </div>
+          <div class="module">
+            <div class="content">
+              <h2>Total</h2>
+              <p>235</p>
+            </div>
+            <div class="content">
+              <h2>Online</h2>
+              <p>92%</p>
+            </div>
+            <div class="content">
+              <h2>Offline</h2>
+              <p>8%</p>
+            </div>
+          </div>
+          <div class="module">
+            <div class="content">
+              <h2>Available</h2>
+              <p>145</p>
+            </div>
+            <div class="content">
+              <h2>In Use</h2>
+              <p>65</p>
+            </div>
+            <div class="content">
+              <h2>Unavailable</h2>
+              <p>15</p>
+            </div>
+          </div>
+          <div>
+            <canvas id="mychart4" style="max-height: 350px;object-fit: contain; "></canvas>
+          </div>
+        </div>
+        <div class="Box">
+          <div class="head">
+            <h2>Charging Information</h2>
+            <h2>History</h2>
+          </div>
+          <div class="module">
+            <div class="Basket">
+              <p><i style="color: purple;" class="fa-solid fa-battery-three-quarters"></i></p>
+              <h3>Percentage</h3>
+              <p>76%</p>
+            </div>
+            <div class="Basket">
+              <h2>28 Jan'24</h2>
+              <p>50 min</p>
+              <p style="font-size: 20px;"><i style="color: white; background-color: darkgreen; font-size: x-large;"
+                  class="fa-solid fa-bolt"></i>52 KWH</p>
+            </div>
+          </div>
+          <div class="module">
+            <div class="Basket">
+              <p><i style="color: gold;" class="fa-solid fa-bolt"></i></p>
+              <h3>KWH</h3>
+              <p>76%</p>
+            </div>
+            <div class="Basket">
+              <h2>15 Mar'24</h2>
+              <p>80 min</p>
+              <p style="font-size: 20px;"><i style="color: white; background-color: darkgreen; font-size: x-large;"
+                  class="fa-solid fa-bolt"></i>60 KWH</p>
+            </div>
+          </div>
+          <div class="module">
+            <div class="Basket">
+              <p><i style="color: rgb(226, 9, 129);" class="fa-solid fa-dollar-sign"></i></p>
+              <h3>Total</h3>
+              <p>$765</p>
+            </div>
+            <div class="Basket">
+              <h2>12 Aug'24</h2>
+              <p>120 min</p>
+              <p style="font-size: 20px;"><i style="color: white; background-color: darkgreen; font-size: x-large;"
+                  class="fa-solid fa-bolt"></i>45 KWH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer>
-      <p>© 2025 Stackly Magazine | Connecting You to News, Sports, Travel & Health</p>
+      <p>© 2025 Inspire360 Magazine | Connecting You to News, Sports, Travel & Health</p>
     </footer>
   </div>
 
@@ -100,5 +210,8 @@
       });
     });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="dashboard1.js"></script>
 </body>
+
 </html>
