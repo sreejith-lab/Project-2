@@ -269,7 +269,7 @@ body {
 }
 
 .Table {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .section {
