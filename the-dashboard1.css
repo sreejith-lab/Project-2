@@ -107,6 +107,13 @@ header ul li {
     padding: 0;
 }
 
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 /* -----------HAMBURGER MENU----------------- */
 
 .lines {
@@ -183,7 +190,7 @@ body {
   /* overflow: hidden; */
 }
 
-nav ul {
+.header nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -191,17 +198,17 @@ nav ul {
   margin: 1rem 0 0;
 }
 
-nav ul li {
+.header nav ul li {
   margin: 0 15px;
 }
 
-nav a {
+.header nav a {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
 }
 
-nav a:hover {
+.header nav a:hover {
   color: #ff6347;
 }
 
@@ -250,6 +257,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0;
   /* margin: 1rem 0 0; */
 }
@@ -537,4 +545,11 @@ footer {
     .hamburger {
         display: block;
     }
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }

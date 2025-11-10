@@ -10,7 +10,6 @@
 body {
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
-    width: 100vw;
 }
 
 header {
@@ -22,7 +21,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 5px;
 }
 
 header ul li {
@@ -944,10 +942,10 @@ footer {
 }
 
 .sidebar ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     padding: 0;
 }
@@ -1002,20 +1000,28 @@ footer {
     transition: transform 0.3s ease;
 }
 
-.sidebar ul li.active > a .dropdown-arrow {
+.sidebar ul li.active>a .dropdown-arrow {
     transform: rotate(180deg);
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1240px) {
     .menu_bar ul {
         display: none;
     }
 
     header ul li {
-        display:none ;
+        display: none;
     }
 
     .hamburger {
         display: block;
     }
+
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }

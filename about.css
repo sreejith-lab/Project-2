@@ -10,7 +10,6 @@
 body {
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
-    width: 100vw;
 }
 
 header {
@@ -771,4 +770,11 @@ section h2 {
     .hamburger {
         display: block;
     }
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
