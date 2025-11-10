@@ -400,3 +400,8 @@ ul li a{
     justify-content: center;
     gap: 20px;
 }
+
+button a {
+    text-decoration: none;
+    color:palevioletred;
+}
