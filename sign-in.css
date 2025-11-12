@@ -421,3 +421,15 @@ header ul li a  {
 button {
     color: palevioletred;
 }
+
+/* .span_text {
+    color: red;
+} */
+
+.span_email {
+    color: red;
+}
+
+.span_password {
+    color: red;
+}
