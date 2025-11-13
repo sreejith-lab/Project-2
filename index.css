@@ -1068,16 +1068,17 @@ header ul li a  {
 
   .search-container button {
     border: none;
-    background: palevioletred;
+    background: white;
     color: white;
     padding: 8px 12px;
     cursor: pointer;
     transition: 0.3s;
   }
 
-  .search-container button:hover {
-    background: #c94f7c;
+  .search-container button i {
+    color: palevioletred;
   }
+
 
 
   @media screen and (max-width:690px) {
