@@ -1054,7 +1054,7 @@ gap: 10px;
     cursor: pointer;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1400px) {
     .menu_bar ul {
         display: none;
     }
@@ -1121,4 +1121,10 @@ header ul li a  {
         display: none;
     }
     
+}
+
+@media screen and (max-width:1550px) {
+    .menu_bar ul li a {
+        font-size: 16px;
+    }
 }

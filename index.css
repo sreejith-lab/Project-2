@@ -1010,8 +1010,14 @@ gap: 10px;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
+@media screen and (max-width:1550px) {
+    .menu_bar ul li a {
+        font-size: 16px;
+    }
+}
 
-@media screen and (max-width:1200px) {
+
+@media screen and (max-width:1400px) {
     .menu_bar ul {
         display: none;
     }
