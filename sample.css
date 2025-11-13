@@ -10,7 +10,6 @@
 body {
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
-    width: 100vw;
 }
 
 header {
@@ -22,6 +21,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    padding: 5px;
 }
 
 header ul li {
@@ -108,11 +108,9 @@ header ul li {
     padding: 0;
 }
 
-/* -----------HAMBURGER MENU----------------- */
-
-
 .hamburger {
     display: none;
+    /* padding: 0px 10px; */
 }
 
 ul {
@@ -121,6 +119,632 @@ ul {
     justify-content: center;
     gap: 10px;
 }
+
+/* ------------------------------------------------------------------- */
+
+main {
+    height: 100%;
+
+}
+
+main {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.swiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    /* overflow-x: hidden; */
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.swiper-slide .home-img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(40%);
+    opacity: 0.6;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.home-img {
+    overflow: hidden;
+}
+
+@media screen and (max-width:950px) {
+    .swiper {
+        height: 70vh;
+    }
+}
+
+.swiper-content {
+    position: absolute;
+}
+
+.swiper-content h2 {
+    font-size: 50px;
+    padding: 5px;
+    color: #E62727;
+}
+
+.swiper-content p {
+    font-size: 30px;
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+.cta-button {
+    background-color: red;
+    width: max-content;
+    padding: 10px 25px;
+    border-radius: 15%;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    box-shadow: 5px 5px 20px rgb(186, 38, 88);
+    transform: scale(1.05);
+}
+
+.swiper-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.swiper-icons p {
+    font-size: larger;
+    padding: 20px;
+}
+
+@media screen and (max-width:1241px) {
+    .swiper-content h2 {
+        font-size: 36px;
+    }
+
+    .swiper-content p {
+        font-size: 24px;
+    }
+
+    .swiper-icons p {
+        font-size: large;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .swiper-content h2 {
+        font-size: 32px;
+    }
+
+    .swiper-content p {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .swiper-icons p {
+        font-size: medium;
+    }
+
+    .swiper-icons .cta-button {
+        font-size: medium;
+        padding: 10px 15px;
+    }
+
+    .home-img {
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .swiper-content h2 {
+        font-size: 30px;
+    }
+
+    .swiper-content p {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .swiper-icons p {
+        font-size: medium;
+    }
+
+    .logo {
+        width: 230px;
+    }
+}
+
+/* India Top News */
+
+body {
+    background: var(--light-bg);
+    font-family: "Poppins", sans-serif;
+}
+
+.news-section {
+    width: 100vw;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.news-section h2 {
+    font-size: 1.8rem;
+    color: var(--darkviolet);
+    margin-bottom: 20px;
+}
+
+.news-scroll {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.head-content {
+    display: flex;
+}
+
+.border1 {
+    height: 20px;
+    width: 20px;
+    border-left: solid red 5px;
+    border-top: solid red 5px;
+}
+
+.border2 {
+    height: 20px;
+    width: 20px;
+    border-left: solid black 5px;
+    border-top: solid black 5px;
+}
+
+@media screen and (max-width:410px) {
+    .head-content h2 {
+        font-size: 20px;
+        padding: 2px;
+    }
+}
+
+.news-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.news-scroll::-webkit-scrollbar-thumb {
+    background: var(--paleviolet);
+    border-radius: 10px;
+}
+
+.news-card {
+    background: white;
+    flex: 300px;
+    flex-wrap: wrap;
+    border-radius: 16px;
+    overflow-x: hidden;
+    box-shadow: 0 4px 12px rgba(107, 33, 168, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card img:hover {
+    transform: translatex(5px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-text {
+    padding: 15px;
+}
+
+.news-text h3 {
+    color: var(--darkviolet);
+    font-size: 1rem;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.news-text p {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+@media screen and (max-width:800px) {
+    .news-card img {
+        height: 300px;
+    }
+}
+
+/* news-section = 2 -----------------------------------------  */
+
+.news-section2 {
+    width: 100vw;
+    padding: 10px;
+    gap: 20px;
+    overflow-x: hidden;
+    display: flex;
+}
+
+@media screen and (max-width:1750px) {
+    .container3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .news-section2 {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .news-section2 {
+        display: block;
+    }
+
+    .container1,
+    .container2,
+    .container3 {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:821px) {
+    .container3 {
+        display: block;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width:650px) {
+
+    .news .img-content h4,
+    p {
+        font-size: small;
+    }
+
+    .container1 .para-text h2 {
+        font-size: 20px;
+    }
+
+    .head-content h2 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:512px) {
+    .news {
+        flex-direction: column;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header a {
+        font-size: 18px;
+    }
+
+    .container2 {
+        padding: 0px 0px;
+    }
+}
+
+
+.image {
+    padding: 10px;
+    position: relative;
+}
+
+.image img {
+    border-radius: 25px;
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+}
+
+.image img:hover {
+    transition: 3ms;
+    transform: scaleX(1.02);
+}
+
+.cta-button1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    width: max-content;
+    padding: 10px 25px;
+    border-radius: 15%;
+    color: white;
+    font-size: large;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.cta-button1:hover {
+    box-shadow: 5px 5px 20px rgb(186, 38, 88);
+    transform: scale(1.05);
+}
+
+.container1 .head-content {
+    padding: 10px;
+}
+
+.para-text {
+    padding: 25px;
+}
+
+.container2 {
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+    overflow-x: hidden;
+}
+
+.header a {
+    text-decoration: none;
+    color: palevioletred;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.container1,
+.container2,
+.container3 {
+    flex: 300px;
+    background-color: white;
+    box-shadow: 0 18px 12px rgba(15, 10, 20, 0.15);
+    transition: transform 0.3s ease;
+    padding: 20px;
+    border-radius: 16px;
+    overflow-x: hidden;
+}
+
+
+.Updates {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 25px;
+    overflow-x: hidden;
+}
+
+.news {
+    width: 100%;
+    display: flex;
+    overflow:hidden;
+}
+
+.imgs {
+    width: 280px;
+    height: 150px;
+}
+
+.imgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.imgs img:hover {
+    transition: 3s ease-out;
+    transform: translateX(1.05);
+}
+
+.img-content {
+    padding: 25px;
+}
+
+.link-anchor {
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    gap: 30px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    overflow-x: hidden;
+}
+
+.box {
+    flex: 200px;
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    border-radius: 12px;
+}
+
+.boxes2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.rectangle {
+    width: 100%;
+}
+
+.rectangle {
+    width: 100%;
+}
+
+.rectangle-img {
+    position: relative;
+}
+
+.rectangle-img img {
+    /* display: flex; */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 20x;
+    filter: brightness(30%);
+}
+
+.rectangle-content {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    inset: 0;
+    top: 50%;
+    text-align: center;
+    color: white;
+}
+
+.rectangle-img img:hover {
+    filter: brightness(100%);
+}
+
+/* .head-news, .head-sport, .head-health, .head-travel {
+  display: none;
+} */
+
+
+.news-section3 {
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.picture {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.pic {
+    width: 100%;
+    object-fit: cover;
+}
+
+.Context4 {
+    padding: 10px;
+    background-color: white;
+    box-shadow: 2px 18px 12px rgba(15, 10, 20, 0.15);
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+}
+
+.the-section {
+    overflow-x: hidden;
+}
+
+.Context4 {
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.news-section4 {
+    overflow-x: hidden;
+}
+
+.div {
+    overflow-x: hidden;
+}
+
+.The-Parent {
+    overflow-x: hidden;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .container-content {
+    overflow-x: hidden;
+} */
+
+@media screen and (max-width:620px) {
+    .div1 {
+        font-size: medium;
+    }
+}
+
+.news-section4 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    overflow-x: hidden;
+}
+
+.div {
+    flex: 320px;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 2px 18px 12px rgba(15, 10, 20, 0.15);
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+}
+
+.image-contents {
+    position: absolute;
+}
+
+.div1 p {
+    font-size: larger;
+    padding: 10px;
+    font-weight: 500;
+    /* background-color: white;
+    box-shadow: 0 18px 12px rgba(15, 10, 20, 0.15);
+    transition: transform 0.3s ease;
+    border-radius: 12px; */
+}
+
+section {
+    overflow-x: hidden;
+}
+
+/* -----------HAMBURGER MENU----------------- */
 
 .lines {
     width: 30px;
@@ -149,32 +773,146 @@ ul {
     transition: 1s;
 }
 
-.hamburger.active .lines:nth-child(1) {
-    transform: rotate(45deg);
-    transition: 1s;
+
+/* ------------------ FOOTER PAGE ------------------------ */
+
+footer {
+    overflow-x: hidden;
 }
 
-.hamburger.active .lines:nth-child(2) {
-    transform: translatex(-10px);
-    background-color: transparent;
+.footer-parent {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: palevioletred;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    margin-top: 30px;
+    overflow-x: hidden;
 }
 
-.hamburger.active .lines:nth-child(3) {
-    transform: rotate(-45deg);
-    transition: 1s;
+.set1,
+.set2,
+.set3,
+.set4 {
+    flex: 300px;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
 }
 
-.hamburger.active {
-    transform: rotate(360deg);
-    transition: 2s;
-}
-header ul li {
-  display: none;
+.set1 {
+    padding-top: 30px;
 }
 
-/* ------------- Side- Bar -------------- */
+.set1 img {
+    width: 300px;
+    height: 70px;
+    object-fit: cover;
+    padding: 0px;
+}
+
+.footer-para {
+    font-size: larger;
+}
+
+.set1 a {
+    text-decoration: none;
+}
+
+.set1 a i {
+    font-size: x-large;
+    color: white;
+    padding: 20px;
+}
+
+.set1 a i:hover {
+    color: red;
+}
+
+.set2 {
+    padding-top: 60px;
+}
+
+.footer-li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.footer-li a {
+    display: inline-block;
+    font-size: larger;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.footer-li>a:hover {
+    color: red;
+}
+
+.footer-header {
+    color: rgb(157, 37, 77);
+}
+
+.set3 {
+    padding-top: 60px;
+}
+
+.set3 .footer-para {
+    padding: 10px;
+    font-weight: 400;
+}
+
+.set4 {
+    padding-top: 60px;
+}
+
+.set4>.footer-para {
+    padding: 10px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+@media screen and (max-width:769px) {
+    .footer-parent {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .footer-para {
+        font-size: medium;
+    }
+
+    .footer-li a {
+        font-size: medium;
+    }
+
+    .footer-header {
+        font-size: larger;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .cta-button1 {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .set1 .logo {
+        width: 200px;
+    }
+}
 
 
+/* ----------------------------------------------------------------------------------------- */
 /* Hamburger */
 .hamburger {
     display: none;
@@ -214,7 +952,7 @@ header ul li {
 }
 
 .sidebar ul li {
-    padding: 15px 30px;
+    padding: 15px 15px;
     position: relative;
 }
 
@@ -225,26 +963,35 @@ header ul li {
     color: white;
     text-decoration: none;
 }
+.sidebar ul li div span {
+    color: white;
+    text-decoration: none;
+}
+
+.flexdiv{
+display: flex;
+align-items: center;
+gap: 10px;
+}
 
 .sidebar ul li a:hover {
     color: #f1f1f1;
 }
 
-.sidebar ul li .submenu {
+.sidebar ul li .submenu  {
     list-style: none;
     padding-left: 15px;
-    max-height: 0;
+    /* max-height: 0; */
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    display: none;
 }
-
-.sidebar ul li .submenu li {
-    padding: 10px 0;
-    font-size: 14px;
+ .sidebar ul li .submenu2 {
+    padding-left: 15px;
+    display: none;
 }
-
-.sidebar ul li.active .submenu {
-    max-height: 500px;
+ .submenu1 {
+    padding-left: 15px;
+    display: block;
 }
 
 /* Close button */
@@ -258,21 +1005,76 @@ header ul li {
 }
 
 /* Arrow rotation */
-.dropdown-arrow {
+.dropdownArrow {
     font-size: 12px;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
-.sidebar ul li.active > a .dropdown-arrow {
-    transform: rotate(180deg);
-}
-
-/* Responsive */
-@media screen and (max-width: 768px) {
-    nav.menu_bar {
+@media screen and (max-width:1200px) {
+    .menu_bar ul {
         display: none;
     }
-    .hamburger {
-        display: flex;
+
+    header ul li {
+        display:none ;
     }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header ul li a  {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------- */
+
+
+ .search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 250px;
+    height: 38px;
+    margin: 0 10px;
+  }
+
+  .search-container input {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    flex: 1;
+  }
+
+  .search-container button {
+    border: none;
+    background: palevioletred;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .search-container button:hover {
+    background: #c94f7c;
+  }
+
+
+  @media screen and (max-width:690px) {
+    .search-container {
+        display: none;
+    }
+    
 }

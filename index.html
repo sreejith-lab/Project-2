@@ -27,8 +27,14 @@
       <img class="logo"  src="./images/logo_11zon_11zon (1)_11zon.webp" alt="">
       </a>
     </div>
-    <nav class="menu_bar">
 
+          <!-- 🔹 Search Bar -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search News, Travel, Health, Sports...">
+    <button id="searchBtn"><i class="fa-solid fa-search"></i></button>
+  </div>
+
+    <nav class="menu_bar">
       <ul>
         <li><a class="" href="./index.html">Home <i class="fa-solid fa-caret-down"></i></a>
           <div class="dropdown_menu1">
@@ -854,6 +860,33 @@
       subMenu2.classList.toggle('submenu1')
     })
   </script>
+
+    <!-- 🔹 JavaScript Search Bar-->
+<script>
+  const searchBtn = document.getElementById("searchBtn");
+  const searchInput = document.getElementById("searchInput");
+
+  const categoryPages = {
+    news: "./news.html",
+    travel: "./travel.html",
+    health: "./health.html",
+    sports: "./sport.html"
+  };
+
+  function searchCategory() {
+    const query = searchInput.value.trim().toLowerCase();
+    if (categoryPages[query]) {
+      window.location.href = categoryPages[query];
+    } else if (query) {
+      alert("No match found! Try News, Travel, Health, or Sports.");
+    }
+  }
+
+  searchBtn.addEventListener("click", searchCategory);
+  searchInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") searchCategory();
+  });
+</script>
 
 </body>
 

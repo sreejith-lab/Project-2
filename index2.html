@@ -27,6 +27,13 @@
       <img class="logo"  src="./images/logo_11zon_11zon (1)_11zon.webp" alt="">
       </a>
     </div>
+
+  <!-- 🔹 Search Bar -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search Culture, Entertainment, Business, Food...">
+    <button id="searchBtn"><i class="fa-solid fa-search"></i></button>
+  </div>
+
     <nav class="menu_bar">
 
       <ul>
@@ -854,6 +861,33 @@
             subMenu2.classList.toggle('submenu1')
         })
     </script>
+
+        <!-- 🔹 JavaScript Search Bar-->
+<script>
+  const searchBtn = document.getElementById("searchBtn");
+  const searchInput = document.getElementById("searchInput");
+
+  const categoryPages = {
+    culture: "./culture.html",
+    entertainment: "./entertainment.html",
+    food: "./food.html",
+    business: "./business.html"
+  };
+
+  function searchCategory() {
+    const query = searchInput.value.trim().toLowerCase();
+    if (categoryPages[query]) {
+      window.location.href = categoryPages[query];
+    } else if (query) {
+      alert("No match found! Try Culture, Entertainment, Food, or Business.");
+    }
+  }
+
+  searchBtn.addEventListener("click", searchCategory);
+  searchInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") searchCategory();
+  });
+</script>
 
 </body>
 

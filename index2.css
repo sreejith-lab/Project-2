@@ -1078,3 +1078,47 @@ ul li a{
 header ul li a  {
     text-decoration: none;
 }
+
+
+/* ------------------------------------------------------------- */
+
+
+ .search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 250px;
+    height: 38px;
+    margin: 0 10px;
+  }
+
+  .search-container input {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    flex: 1;
+  }
+
+  .search-container button {
+    border: none;
+    background: palevioletred;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .search-container button:hover {
+    background: #c94f7c;
+  }
+
+
+  @media screen and (max-width:690px) {
+    .search-container {
+        display: none;
+    }
+    
+}
