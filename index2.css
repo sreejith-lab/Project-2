@@ -140,9 +140,6 @@ main {
   overflow: hidden;
 }
 
-.swiper-wrapper {
-  /* overflow-x: hidden; */
-}
 
 .swiper-slide {
   text-align: center;
